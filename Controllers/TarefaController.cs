@@ -25,7 +25,7 @@ namespace TrilhaApiDesafio.Controllers
             // retornar NotFound,
             if (tarefa == null)
             {
-                return HttpNotFound();
+                return NoFound();
             }
             // caso contrário retornar OK com a tarefa encontrada
             return Ok(tarefa);
